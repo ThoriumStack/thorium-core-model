@@ -1,0 +1,9 @@
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.csprojResolveAssemblyReference.cache
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.csproj.CoreCompileInputs.cache
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.AssemblyInfoInputs.cache
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.AssemblyInfo.cs
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\bin\Debug\netstandard2.0\MyBucks.Core.Model.deps.json
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\bin\Debug\netstandard2.0\MyBucks.Core.Model.dll
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\bin\Debug\netstandard2.0\MyBucks.Core.Model.pdb
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.dll
+C:\Users\admin\Source\Repos\ProductRequirementService\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.pdb
