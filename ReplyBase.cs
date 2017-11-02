@@ -1,4 +1,6 @@
-﻿namespace MyBucks.Core.Model
+﻿using System;
+
+namespace MyBucks.Core.Model
 {
     public class ReplyBase
     {
@@ -6,6 +8,7 @@
         public string ReplyMessage { get; set; }
         public string UniqueIdentifier { get; set; }
         public long TransactionRef { get; set; }
+
         public ReplyBase()
         {
             ReplyStatus = ReplyStatus.Successful;
@@ -20,11 +23,19 @@
 
         public static ReplyBase Failed(string message)
         {
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                FailureAction?.Invoke(message);
+            }
             return new ReplyBase(ReplyStatus.Failed, message);
         }
 
         public static TReturn Failed<TReturn>(string failureMessage) where TReturn : ReplyBase, new()
         {
+            if (!string.IsNullOrWhiteSpace(failureMessage))
+            {
+                FailureAction?.Invoke(failureMessage);
+            }
             return new TReturn()
             {
                 ReplyStatus = ReplyStatus.Failed,
@@ -34,11 +45,19 @@
 
         public static ReplyBase Success(string message = "")
         {
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                SuccessAction?.Invoke(message);
+            }
             return new ReplyBase(ReplyStatus.Successful, message);
         }
 
         public static TReturn Success<TReturn>(string message = "") where TReturn : ReplyBase, new()
         {
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                SuccessAction?.Invoke(message);
+            }
             return new TReturn()
             {
                 ReplyStatus = ReplyStatus.Successful,
@@ -55,6 +74,9 @@
         {
             return $"Status: {ReplyStatus}, Message: {ReplyMessage}";
         }
+
+        public static Action<string> SuccessAction { get; set; }
+        public static Action<string> FailureAction { get; set; }
     }
 
     public class RequestBaseObject

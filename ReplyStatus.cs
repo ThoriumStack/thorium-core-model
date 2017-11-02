@@ -7,6 +7,8 @@ namespace MyBucks.Core.Model
     public enum ReplyStatus
     {
         Successful = 0,
-        Failed = 1
+        Failed = 1,
+        NotFound = 2,
+        Unauthorized = 3
     }
 }

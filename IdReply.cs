@@ -1,11 +1,11 @@
 ﻿namespace MyBucks.Core.Model
 {
-    public class IdReplyObject : ReplyBase
+    public class IdReply : ReplyBase
     {
 
-        public static IdReplyObject Success(string message, long refId)
+        public static IdReply Success(string message, long refId)
         {
-            return new IdReplyObject()
+            return new IdReply()
             {
                 ReplyStatus = ReplyStatus.Successful,
                 ReplyMessage = message,
@@ -13,9 +13,9 @@
             };
         }
 
-        public static new IdReplyObject Failed(string message)
+        public static new IdReply Failed(string message)
         {
-            return new IdReplyObject()
+            return new IdReply()
             {
                 ReplyStatus = ReplyStatus.Failed,
                 ReplyMessage = message,
@@ -23,9 +23,9 @@
         }
         public long? RefId { get; set; }
 
-        public static IdReplyObject Failed(string failureMessage, long jobRefId)
+        public static IdReply Failed(string failureMessage, long jobRefId)
         {
-            return new IdReplyObject()
+            return new IdReply()
             {
                 ReplyStatus = ReplyStatus.Failed,
                 ReplyMessage = failureMessage,
