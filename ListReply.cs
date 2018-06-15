@@ -13,7 +13,7 @@ namespace MyBucks.Core.Model
             };
         }
 
-        public static new ListReply<T> Failed(string failureMessage)
+        public new static ListReply<T> Failed(string failureMessage)
         {
             return new ListReply<T>()
             {

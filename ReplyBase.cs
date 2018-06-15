@@ -64,6 +64,34 @@ namespace MyBucks.Core.Model
                 ReplyMessage = message
             };
         }
+        
+        public static ReplyBase NotFound(string message = "")
+        {
+            return new ReplyBase(ReplyStatus.Successful, message);
+        }
+
+        public static TReturn NotFound<TReturn>(string message = "") where TReturn : ReplyBase, new()
+        {
+            return new TReturn()
+            {
+                ReplyStatus = ReplyStatus.NotFound,
+                ReplyMessage = message
+            };
+        }
+        
+        public static ReplyBase Unauthorized(string message = "")
+        {
+            return new ReplyBase(ReplyStatus.Unauthorized, message);
+        }
+
+        public static TReturn Unauthorized<TReturn>(string message = "") where TReturn : ReplyBase, new()
+        {
+            return new TReturn()
+            {
+                ReplyStatus = ReplyStatus.Unauthorized,
+                ReplyMessage = message
+            };
+        }
 
         public bool IsSuccessful()
         {
@@ -83,4 +111,5 @@ namespace MyBucks.Core.Model
     {
         public string CustomerUniqueIdentifier { get; set; }
     }
+
 }

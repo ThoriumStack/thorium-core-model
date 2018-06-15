@@ -3,7 +3,7 @@
     public class IdReply : ReplyBase
     {
 
-        public static IdReply Success(string message, long refId)
+        public new static IdReply Success(long refId, string message="")
         {
             return new IdReply()
             {
@@ -13,7 +13,7 @@
             };
         }
 
-        public static new IdReply Failed(string message)
+        public new static IdReply Failed(string message)
         {
             return new IdReply()
             {
@@ -23,13 +23,13 @@
         }
         public long? RefId { get; set; }
 
-        public static IdReply Failed(string failureMessage, long jobRefId)
+        public static IdReply Failed(long id, string failureMessage)
         {
             return new IdReply()
             {
                 ReplyStatus = ReplyStatus.Failed,
                 ReplyMessage = failureMessage,
-                RefId = jobRefId
+                RefId = id
             };
         }
     }

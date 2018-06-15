@@ -1,4 +1,5 @@
-﻿namespace MyBucks.Core.Model
+﻿
+namespace MyBucks.Core.Model
 {
     public class ServiceResponseObject
     {
