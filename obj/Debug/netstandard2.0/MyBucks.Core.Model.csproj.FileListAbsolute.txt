@@ -16,3 +16,12 @@ C:\Users\admin\Source\Repos\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.
 C:\Users\admin\Source\Repos\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.AssemblyInfo.cs
 C:\Users\admin\Source\Repos\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.dll
 C:\Users\admin\Source\Repos\MyBucks.Core.Model\obj\Debug\netstandard2.0\MyBucks.Core.Model.pdb
+C:\projects\mybucks\lib\core-model\bin\Debug\netstandard2.0\MyBucks.Core.Model.deps.json
+C:\projects\mybucks\lib\core-model\bin\Debug\netstandard2.0\MyBucks.Core.Model.dll
+C:\projects\mybucks\lib\core-model\bin\Debug\netstandard2.0\MyBucks.Core.Model.pdb
+C:\projects\mybucks\lib\core-model\obj\Debug\netstandard2.0\MyBucks.Core.Model.csprojResolveAssemblyReference.cache
+C:\projects\mybucks\lib\core-model\obj\Debug\netstandard2.0\MyBucks.Core.Model.csproj.CoreCompileInputs.cache
+C:\projects\mybucks\lib\core-model\obj\Debug\netstandard2.0\MyBucks.Core.Model.AssemblyInfoInputs.cache
+C:\projects\mybucks\lib\core-model\obj\Debug\netstandard2.0\MyBucks.Core.Model.AssemblyInfo.cs
+C:\projects\mybucks\lib\core-model\obj\Debug\netstandard2.0\MyBucks.Core.Model.dll
+C:\projects\mybucks\lib\core-model\obj\Debug\netstandard2.0\MyBucks.Core.Model.pdb

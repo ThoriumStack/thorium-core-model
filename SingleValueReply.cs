@@ -1,7 +1,13 @@
 ﻿namespace MyBucks.Core.Model
 {
-    public class SingleValueReply<T> : ReplyBase
+    public abstract class SingleValueReply : ReplyBase {
+        public object Value { get; set; }
+    }
+    
+    public class SingleValueReply<T> : SingleValueReply
     {
+        private T _value;
+
         public SingleValueReply()
         {
         }
@@ -26,6 +32,14 @@
             Value = value;
         }
 
-        public T Value { get; set; }
+        public new T Value
+        {
+            get => _value;
+            set
+            {
+                _value = value;
+                base.Value = value;
+            }
+        }
     }
 }
