@@ -14,7 +14,11 @@ namespace Tests
             {
                 ResultList = new List<int> {1,2,3}
             };
-            Assert.NotEmpty(((ListReply) lst).ResultList);
+            
+            lst.ResultList.Add(4);
+
+            
+            return;
         }
     }
 }

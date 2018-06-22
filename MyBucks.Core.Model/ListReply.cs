@@ -6,12 +6,17 @@ namespace MyBucks.Core.Model
 
     public class ListReply : ReplyBase
     {
-        public List<object> ResultList { get; set; }
+        public object ResultList { get; protected set; }
+
+        public List<T> GetList<T>()
+        {
+            return (List<T>) ResultList;
+        }
+        
     }
     
     public class ListReply<T> : ListReply
     {
-        private List<T> _resultList;
 
         public static ListReply<T> Success(List<T> value, string successMessage = "")
         {
@@ -33,14 +38,12 @@ namespace MyBucks.Core.Model
 
         public List<T> ResultList
         {
-            get => _resultList;
+            get => base.GetList<T>();
             set
             {
-                _resultList = value;
-                base.ResultList =  _resultList.Cast<object>().ToList();
+                base.ResultList =  value;
             }
         }
-
 
         public ListReply()
         {
@@ -51,5 +54,9 @@ namespace MyBucks.Core.Model
 
             ResultList = value;
         }
+    }
+    
+    public static class ListreplyExtensions {
+          
     }
 }
