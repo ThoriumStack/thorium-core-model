@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using MyBucks.Core.Model;
 using Xunit;
 
@@ -10,15 +11,41 @@ namespace Tests
         [Fact]
         public void TestBaseContainment()
         {
-            var lst = new ListReply<int>
+           
+
+            CallerMethod();
+            return;
+        }
+
+        public void CallerMethod()
+        {
+            var lst = new MyContainer<int>
             {
-                ResultList = new List<int> {1,2,3}
+                MyList = new List<int> { 1,2,3 }
             };
             
-            lst.ResultList.Add(4);
+            GetObjectList(lst);
+        }
 
+        public void GetObjectList(MyContainerBase x)
+        {
+            var lst = (List<object>) x.MyObjectlist;
             
-            return;
+            
+        }
+
+        public abstract class MyContainerBase
+        {
+            public List<object> MyObjectlist { get; set; }
+        }
+        
+        public class MyContainer<T> : MyContainerBase
+        {
+            public List<T> MyList
+            {
+                get { return base.MyObjectlist.Cast<T>(); }
+                set { base.MyObjectlist = value; }
+            }
         }
     }
 }

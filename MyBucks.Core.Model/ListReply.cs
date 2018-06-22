@@ -39,16 +39,14 @@ namespace MyBucks.Core.Model
         public List<T> ResultList
         {
             get => base.GetList<T>();
-            set
-            {
-                base.ResultList =  value;
-            }
+            set => base.ResultList =  value;
         }
 
         public ListReply()
         {
             ResultList = new List<T>();
         }
+        
         public ListReply(List<T> value)
         {
 
