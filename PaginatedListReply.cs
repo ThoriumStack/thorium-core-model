@@ -1,9 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace MyBucks.Core.Model
+﻿namespace MyBucks.Core.Model
 {
-    
     public class PaginatedListReply<T> : ListReply<T>, IPaginatedReply
     {
         public int TotalItems { get; set; }
