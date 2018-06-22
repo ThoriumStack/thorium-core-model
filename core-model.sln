@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBucks.Core.Model", "MyBucks.Core.Model\MyBucks.Core.Model.csproj", "{A41B64D8-3281-4F32-A8E7-2FCB26C503E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{F39DE422-912E-4F79-9705-0D2495673678}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{A41B64D8-3281-4F32-A8E7-2FCB26C503E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A41B64D8-3281-4F32-A8E7-2FCB26C503E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A41B64D8-3281-4F32-A8E7-2FCB26C503E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39DE422-912E-4F79-9705-0D2495673678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39DE422-912E-4F79-9705-0D2495673678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39DE422-912E-4F79-9705-0D2495673678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39DE422-912E-4F79-9705-0D2495673678}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
