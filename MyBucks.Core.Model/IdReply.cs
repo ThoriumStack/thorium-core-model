@@ -4,7 +4,6 @@
     {
 
         public long? RefId { get; set; }
-        public int? Id { get; set; }
         
         public new static IdReply Success(long refId, string message="")
         {
@@ -22,7 +21,7 @@
             {
                 ReplyStatus = ReplyStatus.Successful,
                 ReplyMessage = message,
-                Id = refId
+                RefId = refId
             };
         }
 
