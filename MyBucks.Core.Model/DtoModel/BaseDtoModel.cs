@@ -9,11 +9,11 @@ namespace MyBucks.Core.Model.DtoModel
         [Key]
         public int Id { get; set; }
         
-        public int? CreatedById { get; set; }
+        public string CreatedById { get; set; }
         
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         
-        public int? ModifiedById { get; set; }
+        public string ModifiedById { get; set; }
         
         public DateTime? ModifiedDate { get; set; }
     }

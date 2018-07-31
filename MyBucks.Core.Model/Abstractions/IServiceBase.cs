@@ -2,7 +2,7 @@
 {
     public interface IServiceBase
     {
-        int CurrentUserId { get; set; }
+        string CurrentUserId { get; set; }
         string CurrentContext { get; set; }
     }
 }
