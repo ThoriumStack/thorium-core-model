@@ -8,12 +8,12 @@ namespace MyBucks.Core.Model.Abstractions
         [Key]
         int Id { get; set; }
 
-        string CreatedById { get; set; }
-
-        DateTime CreatedDate { get; set; }
-        
-        string ModifiedById { get; set; }
-
-        DateTime? ModifiedDate { get; set; }
+//        string CreatedById { get; set; }
+//
+//        DateTime CreatedDate { get; set; }
+//        
+//        string ModifiedById { get; set; }
+//
+//        DateTime? ModifiedDate { get; set; }
     }
 }
