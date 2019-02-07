@@ -4,5 +4,6 @@
     {
         string CurrentUserId { get; set; }
         string CurrentContext { get; set; }
+        int CurrentTimeZoneOffset { get; set; }
     }
 }
