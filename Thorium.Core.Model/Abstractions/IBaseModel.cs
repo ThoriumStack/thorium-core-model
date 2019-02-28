@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MyBucks.Core.Model.Abstractions
+namespace Thorium.Core.Model.Abstractions
 {
     public interface IBaseModel
     {

@@ -1,4 +1,4 @@
-﻿namespace MyBucks.Core.Model
+﻿namespace Thorium.Core.Model
 {
     public abstract class SingleValueReply : ReplyBase {
         public object Value { get; set; }

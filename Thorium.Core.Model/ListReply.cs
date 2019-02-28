@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
-namespace MyBucks.Core.Model
+namespace Thorium.Core.Model
 {
 
     public class ListReply : ReplyBase

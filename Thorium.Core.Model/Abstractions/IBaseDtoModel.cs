@@ -1,7 +1,6 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace MyBucks.Core.Model.Abstractions
+namespace Thorium.Core.Model.Abstractions
 {
     public interface IBaseDtoModel
     {

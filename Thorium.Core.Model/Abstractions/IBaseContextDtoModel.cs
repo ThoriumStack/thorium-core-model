@@ -1,4 +1,4 @@
-﻿namespace MyBucks.Core.Model.Abstractions
+﻿namespace Thorium.Core.Model.Abstractions
 {
     public interface IBaseContextDtoModel : IBaseDtoModel
     {

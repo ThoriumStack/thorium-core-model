@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.ComponentModel.DataAnnotations;
 
-namespace MyBucks.Core.Model.DataModel
+namespace Thorium.Core.Model.DataModel
 {
     public class BaseEntity
     {

@@ -1,6 +1,6 @@
-﻿using MyBucks.Core.Model.Abstractions;
+﻿using Thorium.Core.Model.Abstractions;
 
-namespace MyBucks.Core.Model.DtoModel
+namespace Thorium.Core.Model.DtoModel
 {
     public abstract class BaseContextDtoModel : BaseDtoModel, IBaseContextDtoModel
     {

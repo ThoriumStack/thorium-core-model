@@ -1,4 +1,4 @@
-﻿namespace MyBucks.Core.Model
+﻿namespace Thorium.Core.Model
 {
     public enum ReplyStatus
     {

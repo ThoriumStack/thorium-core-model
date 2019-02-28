@@ -1,9 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Thorium.Core.Model.Abstractions;
 
-using MyBucks.Core.Model.Abstractions;
-
-namespace MyBucks.Core.Model.DataModel
+namespace Thorium.Core.Model.DataModel
 {
     public abstract class BaseModel : IBaseModel
     {
